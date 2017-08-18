@@ -1,0 +1,14 @@
+    </div>
+<!-- /container -->
+
+<!-- jQuery library -->
+<script src="libs/js/jquery.min.js"></script>
+
+<!-- bootstrap JavaScript -->
+<script src="libs/css/bootstrap.min.js"></script>
+
+<!-- bootbox library -->
+<script src="libs/js/bootbox.min.js"></script>
+
+</body>
+</html>
