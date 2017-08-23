@@ -49,4 +49,33 @@ class Product{
       }
     }
 
+    function readAll($from_record_num, $records_per_page){
+
+      $query = "SELECT
+                  id, name, description, price, category_id
+              FROM
+                  " . $this->table_name . "
+              ORDER BY
+                  name ASC
+              LIMIT
+                  {$from_record_num}, {$records_per_page}";
+
+      $stmt = $this->conn->prepare( $query );
+      $stmt->execute();
+
+      return $stmt;
+  }
+
+  //used for paging products
+  public function countAll(){
+    $query = "SELECT id FROM " . $this->table_name . "";
+
+    $stmt = $this->conn->prepare($query);
+    $stmt->execute();
+
+    $num = $stmt->rowCount();
+
+    return $num;
+  }
+}
  ?>
