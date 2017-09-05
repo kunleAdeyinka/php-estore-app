@@ -4,7 +4,7 @@
           // button for first page
           if($page>1){
               echo "<li><a href='{$page_url}' title='Go to the first page.'>";
-                  echo "<<";
+                  echo "First Page";
               echo "</a></li>";
           }
 
@@ -34,7 +34,7 @@
           // button for last page
           if($page<$total_pages){
               echo "<li><a href='" .$page_url. "page={$total_pages}' title='Last page is {$total_pages}.'>";
-                  echo ">>";
+                  echo "Last Page";
               echo "</a></li>";
           }
 

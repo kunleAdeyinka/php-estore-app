@@ -34,11 +34,11 @@ class Category{
 
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(1, $this->id);
-        $stmt.execute();
+        $stmt->execute();
 
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        $this->name = $row['name']; 
+        $this->name = $row['name'];
       }
 
 }
